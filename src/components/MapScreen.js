@@ -252,7 +252,7 @@ function MapScreen() {
       </Text>
 
         <Text style={styles.mic}>
-          <Ionicons name={'mic'} size={60} color={'#fff'}/>
+          <Ionicons name={'mic-circle'} size={60} color={'#fff'}/>
         </Text>
 
 
@@ -544,7 +544,7 @@ const styles = StyleSheet.create({
   },
   mic:{
     position: 'absolute',
-    marginTop: 600,
+    marginTop: 400,
     zIndex: 1,
 
   },

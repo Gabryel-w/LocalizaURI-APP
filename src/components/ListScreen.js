@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
         borderLeftColor: 'solid rgb(73, 88, 221)',
         borderRightColor: 'solid rgb(73, 88, 221)',
         borderRightWidth: 2,
-        marginLeft: 50,
+        marginLeft: 30,
         borderRadius: 5,
         marginTop: 30,
 
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: '#fff',
-        fontSize: 20,
+        fontSize: 15,
         padding: 3,
         textAlign: 'center',
         
