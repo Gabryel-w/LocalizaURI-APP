@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MapScreen from './src/components/MapScreen.js'
 import ListScreen from './src/components/ListScreen.js';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import Info from './src/components/Info.js';
 import Help from './src/components/Help.js';
 
 
@@ -29,8 +30,12 @@ export default function App() {
             } else if (route.name === 'Lista') {
               iconName = focused ? 'book' : 'book-outline';
             }
-            else if(route.name == 'Ajuda'){
-              iconName = focused ? 'help' : 'help';
+            else if(route.name == 'Info'){
+              iconName = focused ? 'information-circle' : 'information-circle';
+            }
+            else if(route.name == 'Ajuda')
+            {
+              iconName = focused ? 'help-circle' : 'help-circle';
             }
           
             return <Ionicons name={iconName} size={35} color={color} />;
@@ -41,6 +46,7 @@ export default function App() {
       >
         <Tab.Screen name="Mapa" options={{ headerShown: false }} component={MapScreen} />
         <Tab.Screen name="Lista" options={{ headerShown: false }} component={ListScreen} />
+        <Tab.Screen name="Info" options={{ headerShown: false }} component={Info} />
         <Tab.Screen name="Ajuda" options={{ headerShown: false }} component={Help} />
       </Tab.Navigator>
     </NavigationContainer>
