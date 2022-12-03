@@ -1,28 +1,61 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Image, ScrollView, Dimensions } from 'react-native';
+import { Image, ScrollView } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 
 
-function Help()
-{
-    return(
+function Help() {
+    return (
         <ScrollView>
-             <Text style={styles.title}>
+            <Text style={styles.title}>
                 <Ionicons name={'map'} size={30} color={'#fff'} />
                 Localiza URI
             </Text>
+
+            <View style={styles.container}>
+                <Text style={styles.textTitle}>Mapa:</Text>
+                <Image
+                    source={{ uri: "https://www.imagemhost.com.br/images/2022/12/03/Mapa1.jpg" }}
+                    style={styles.imageSize}
+                />
+                <Text style={styles.text}>Na aba do mapa você pode ver as principais localizações da universidade. </Text>
+
+                <Image
+                    source={{ uri: "https://www.imagemhost.com.br/images/2022/12/03/Mapa2.jpg" }}
+                    style={styles.imageSize}
+                />
+                <Text style={styles.text}> Ao clicar em algum dos prédios você poderá ver uma descrição de qual curso aquele prédio tem aulas entre outras informações. </Text>
+
+                <Text style={styles.textTitle}>Lista:</Text>
+
+                <Image
+                    source={{ uri: "https://www.imagemhost.com.br/images/2022/12/03/lista.jpg" }}
+                    style={styles.imageSize}
+                />
+                <Text style={styles.text}>Na aba da Lista você pode ver a qual prédio cada figura está se referindo para assim tornar a localização mais fácil.</Text>
+
+
+                <Text style={styles.textTitle}>Informações:</Text>
+
+                <Image
+                    source={{ uri: "https://www.imagemhost.com.br/images/2022/12/03/info.jpg" }}
+                    style={styles.imageSize}
+                />
+
+                <Text style={styles.text}>Na aba Info você pode ver as principais informações sobre a Universidade.</Text>
+
+            </View>
         </ScrollView>
     );
 }
 
 const styles = StyleSheet.create({
-    
+
     container:
     {
-        backgroundColor: '#232423',
-        height: Dimensions.get('window').height,
+        alignItems: 'center',
+        padding: 5,
     },
 
     title:
@@ -41,13 +74,19 @@ const styles = StyleSheet.create({
     },
     text:
     {
-       
-        fontSize: 15,
-        textAlign: 'center',
-        padding: 10,
-        color: '#fff'
 
-        
+        fontSize: 15,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginTop: 10,
+        marginBottom: 10,
+        padding: 20,
+        borderBottomWidth: 2,
+        borderRightWidth: 2,
+        borderLeftWidth: 2,
+        borderTopWidth: 2,
+
+
     },
 
     textTitle:
@@ -56,10 +95,15 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         color: 'rgb(73, 88, 220)',
-        marginTop: 20,
-        padding: 5,
-    }
+        marginTop: 10,
+        padding: 20,
+    },
 
+    imageSize: {
+        width: 200,
+        height: 400,
+
+    }
 
 });
 

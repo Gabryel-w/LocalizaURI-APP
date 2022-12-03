@@ -245,15 +245,15 @@ function MapScreen() {
   return (
     <View>
 
-      
+
       <Text style={styles.title}>
         <Ionicons name={'map'} size={30} color={'#fff'} />
         Localiza URI
       </Text>
 
-        <Text style={styles.mic}>
-          <Ionicons name={'mic-circle'} size={60} color={'#fff'}/>
-        </Text>
+      <Text style={styles.mic}>
+        <Ionicons name={'mic-circle'} size={60} color={'#fff'} />
+      </Text>
 
 
       <MapView
@@ -512,6 +512,26 @@ function MapScreen() {
           </View>
         </Marker>
 
+        <Marker
+          coordinate={{
+            latitude: -28.276954407743343,
+            longitude: -54.27002337697743,
+          }}
+          title={"Predio 10"}
+          description={"Biblioteca"}
+        >
+          <View style={styles.imageContainer}>
+            <Image
+              source={{ uri: "https://www.imagemhost.com.br/images/2022/12/03/biblioteca.png" }}
+              style={styles.mapMarkImage}
+            />
+
+          </View>
+        </Marker>
+
+
+
+
 
 
       </MapView>
@@ -542,10 +562,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#fff'
   },
-  mic:{
+  mic: {
     position: 'absolute',
     marginTop: 400,
     zIndex: 1,
+    padding: 20,
 
   },
   map: {

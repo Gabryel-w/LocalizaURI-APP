@@ -145,6 +145,15 @@ function ListScreen() {
                 <Text style = {styles.text}>Laboratorio Agronomia Predio 29</Text>
             </View>
 
+            <View style={styles.container}>
+                <Image
+              source={{ uri: "https://www.imagemhost.com.br/images/2022/12/03/biblioteca.png" }}
+                    style={styles.mapMarkImage}
+                />
+
+                <Text style = {styles.text}>Biblioteca Predio 10</Text>
+            </View>
+
 
 
         </ScrollView>
