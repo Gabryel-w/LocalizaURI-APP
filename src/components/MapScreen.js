@@ -279,7 +279,7 @@ function MapScreen() {
             longitude: -54.27072151044759,
           }}
           title={"Predio 20"}
-          description={"Predio 20 Adimistração"}
+          description={"Predio 20 Administração "}
         >
           <View>
             <Image

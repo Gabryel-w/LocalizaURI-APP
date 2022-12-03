@@ -23,7 +23,7 @@ function ListScreen() {
                     style={styles.mapMarkImage}
                 />
 
-                <Text style = {styles.text}>Predio 20 Adimistração</Text>
+                <Text style = {styles.text}>Predio 20 Administração </Text>
             </View>
 
             <View style={styles.container}>
