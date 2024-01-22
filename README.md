@@ -1,5 +1,5 @@
 
-![Logo](https://www.imagemhost.com.br/images/2022/11/29/mapa.png)
+
 
 
 # Localiza-URI
